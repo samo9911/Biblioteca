@@ -10,16 +10,20 @@
         Scanner sc = new Scanner(System.in);
         //creacion del arreglo con datos desordenados
     int [] arreglo2 = {45, 53, 85, 13, 95, 16, 5, 26, 99,10};
+    
     //Cracion de variables tipo numericas
    int posicion, busqueda;
+   
         //Frace inicial que se muestra en pantalla
    System.out.println("Arreglo en desorden: ");
         System.out.println("               ");
+	
         //Arreglo que el usuario podra ver de forma desordenada
         System.out.println(Arrays.toString(arreglo2)); 
         
         System.out.println("Digite un elementos del arreglo: ");
         System.out.println("               ");
+	
         //Pedido de scanner para que el usuario pueda ingresar datos en la variable busqueda 
         busqueda = sc.nextInt();
         
@@ -27,6 +31,7 @@
    //Uso de erramienta tipo arreglo que nos permite ordenar los datos del arreglo de menor a mayor
    Arrays.sort(arreglo2);
    System.out.println("            ");
+   
         System.out.println("Arreglo ordenado: ");
         System.out.println("                 ");
         
@@ -36,6 +41,7 @@
           System.out.println("                 ");
         
         posicion = Arrays.binarySearch(arreglo2,busqueda);
+	
    //impresion en pantalla de resultado de la busqueda
         System.out.println("El elemento buscado esta en la posicion: "+ posicion);   
      
